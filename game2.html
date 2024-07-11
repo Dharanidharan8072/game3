@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Image Swap</title>
+    <h1><u><marquee>𝙰𝚟𝚎𝚗𝚐𝚎𝚛𝚜 𝙰𝚜𝚜𝚎𝚖𝚋𝚕𝚎</marquee></u></h1>
+    <h3>"Marvel's The Avengers" redirects here. For the original comic book characters, see Avengers (comics).</h3>
+    <h3><u><mark>Marvel Studios</mark></u></h3>
+    <h1><u>Main Heroes:</u></h1>
+    <h2>1.IRON MAN</h2>
+    <h2>2.Captain America</h2>
+    <h2>3.Spider-Man</h2>
+    <h2>4.Thor</h2>
+    <h2>5.Doctor Strange</h2>
+    <h2>6.Hulk</h2>
+    <h2>7.Loki</h2>
+    <h2>8.Thanos</h2>
+    <audio controls autoplay>
+        <source src="Alan_Silvestri_-_Portals__From__Avengers__Endgame__Audio_Only_(256k).mp3">
+    </audio>
+
+    <style>
+        body {
+            background-image: url('ironman 4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const imageSources = [
+            'cptain1.jpg', 'hulk2.jpg', 'spiderman.jpg', 'thor.jpg', 'avengers3.jpg', 
+            'doctor2.jpg', 'thanos.jpg', 'loki1.jpg', 'avengers5.jpg', 'capiron.jpg', 'thor2.jpg', 
+        ];
+
+        function changeBackgroundImage() {
+            const randomIndex = Math.floor(Math.random() * imageSources.length);
+            document.body.style.backgroundImage = `url(${imageSources[randomIndex]})`;
+        }
+
+        // Change the background image every 5 seconds (2000 milliseconds)
+        setInterval(changeBackgroundImage, 2000);
+    </script>
+</body>
+<h3><marquee><mark>Robert Downey Jr.,   Chris Evans,   Mark Ruffalo,   Chris Hemsworth,   Scarlett Johansson,   Tom Hiddleston,   Jeremy Renner,   Samuel L. Jackson,   Tom Holland,   Josh Brolin,   Benedict Cumberbatch</mark></marquee></h3>
+</html>
+ 
